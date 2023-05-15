@@ -1,0 +1,125 @@
+body{
+    margin: 0 400px;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.brand{
+    letter-spacing: 5px;
+}
+.hero-text{
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+}
+.homepage-btn{
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 15px;
+    font-family: 'Jost', sans-serif;
+    font-weight:500;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+}
+.homepage-btn:hover{
+    background-color: #d25d5d;
+    color: white;
+}
+/* Navbar */
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item:nth-child(2){
+    margin-left: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.nav-link:hover{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,128,113,1) 50%, rgba(255,255,255,1) 100%);
+    
+    background-color: gradient();
+    
+}
+
+
+/* hero-block */
+.hero-block-grid{
+    background-color: #ee8071;
+    color: white;
+    border-radius: 10px;
+    padding: 80px 80px;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: 5%;
+    margin-top: 30px;
+}
+div.grid-item-1 * {
+    margin-top: 40px;
+}
+
+/* three component */
+.three-component-grid{
+    margin-top: 130px;
+    display: grid;
+    grid-template:
+        "main top"
+        "main top"
+        "main bottom"
+        "main bottom";
+    grid-gap: 30px;
+}
+.comp-1{grid-area: main;}.comp-2{grid-area: top;}.comp-3{grid-area: bottom;}
+
+
+.component{
+    background-color: #333333;
+    color: white;
+    border-radius: 10px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* three flex comp */
+.three-flex-comp{
+    display: flex;
+    flex-direction: row;
+    margin-top: 180px;
+    column-gap: 50px;
+    margin-bottom: 130px;
+    justify-content: space-evenly;
+}
+.card{
+    text-align: center;
+    width: 330px;
+}
+.card-title-text{
+    letter-spacing: 4px;
+}
+.dot{
+    height: 250px;
+    width: 250px;
+    background-color: #ee8071;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+.dot:hover{
+    background-color: #d25d5d;
+}
