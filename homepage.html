@@ -5,21 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
-        <ul class="navbar-nav">
-            <li class="nav-item"><h2 class="brand">DESIGNO</h2></li>
-            <li class="nav-item"><a class="nav-link">OUR COMPANY</a></li>
-            <li class="nav-item"><a class="nav-link">LOCATIONS</a></li>
-            <li class="nav-item"><a class="nav-link">CONTACT</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">DESIGNO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR COMPANY </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LOCATIONS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            
+           
+          </ul>
+          
+        </div>
+      </nav>
 
     <!-- Hero Block -->
     <div class="hero-block-grid">
@@ -41,42 +62,97 @@
     <!-- Three Component Grid -->
     <div class="three-component-grid">
         <div class="component comp-1">
-            <h1 class="hero-text">WEB DESIGN</h1>
-            <a>VIEW PROJECTS</a>
+            <img src="./images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg" alt="">
+            <div class="centered">
+                <h1 class="hero-text">WEB DESIGN</h1>
+                <a>VIEW PROJECTS</a>
+            </div>
         </div>
         <div class="component comp-2">
-            <h1 class="hero-text">APP DESIGN</h1>
-            <a>VIEW PROJECTS</a>
+            <img src="./images/rami-al-zayat-w33-zg-dNL4-unsplash.jpg" alt="">
+            <div class="centered">
+                <h1 class="hero-text">APP DESIGN</h1>
+                <a>VIEW PROJECTS</a>
+            </div>
         </div>
         <div class="component comp-3">
-            <h1 class="hero-text">GRAPHIC DESIGN</h1>
-            <a>VIEW PROJECTS</a>
+            <img src="./images/nordwood-themes-ubIWo074QlU-unsplash.jpg" alt="">
+            <div class="centered">
+                <h1 class="hero-text">GRAPHIC DESIGN</h1>
+                <a>VIEW PROJECTS</a>
+            </div>
         </div>
     </div>
 
     <!-- Three Component Flex-Row -->
     <div class="three-flex-comp">
-        <div class="card">
+        <div class="hp-card">
             <span class="dot"></span>
-            <h3 class="card-title-text">PASSIONATE</h3>
-            <p>Eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus.</p>
+            <div class="dot-text">
+                <h3 class="card-title-text">PASSIONATE</h3>
+                <p>Eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus.</p>
+            </div>
         </div>
-        <div class="card">
+        <div class="hp-card">
             <span class="dot"></span>
+            <div class="dot-text">
             <h3 class="card-title-text">RESOURCEFUL</h3>
             <p>Posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit amet dictum sit amet justo donec enim diam vulputate ut pharetra sit amet aliquam.</p>
+            </div>
         </div>
-        <div class="card">
+        <div class="hp-card">
             <span class="dot"></span>
-            <h3 class="card-title-text">FRIENDLY</h3>
-            <p>Mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <div class="dot-text">
+                <h3 class="card-title-text">FRIENDLY</h3>
+                <p>Mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
         </div>
     </div>
 
 
     <!-- Footer -->
     <footer>
+        <div class="footer-flex">
+
+
+            <div class="footer-nav">
+                <ul class="footer-navbar-nav">
+                    <li class="f-nav-item"><h2 class="brand">DESIGNO</h2></li>
+                    <li class="f-nav-item"><a class="f-nav-link">OUR COMPANY</a></li>
+                    <li class="f-nav-item"><a class="f-nav-link">LOCATIONS</a></li>
+                    <li class="f-nav-item"><a class="f-nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-info-grid">
+
+                <div class="footer-info-flex">
+                    <p><b>Designo Central Office</b></p>
+                    <p>3886 Wellington Street</p>
+                    <p>Toronto, Ontario M9C 3J5</p>
+                </div>
+                <div class="footer-info-flex">
+                    <p><b>Contact Us (Central Office)</b></p>
+                    <p><b> P: +1 253-863-8967</b></p>
+                    <p><b> M : contact@designo.co</b></p>
+                </div>
+                <div class="footer-social-flex">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-pinterest fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </div>
+
+
+        </div>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

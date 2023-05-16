@@ -1,0 +1,116 @@
+:root {
+    --leftRightMargin: 400px;
+}
+
+/* footer */
+footer{
+    background-color: #202023;
+    color: #eaeaea;
+}
+.footer-nav{
+    margin:25px var(--leftRightMargin) 0;
+    border-bottom: 1px solid #4a4a4a;
+}
+.footer-navbar-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+.f-nav-item:nth-child(2){
+    margin-left: auto;
+}
+.f-nav-link{
+    margin-left: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.footer-info-grid{
+    margin: 20px var(--leftRightMargin) 150px;
+    display: grid;
+    
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    color: #a2a2a2;
+}
+.footer-social-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+    margin-bottom: 1.5em;
+}
+i:nth-child(n){
+    margin-left: 25px;
+}
+
+
+/* font awesome */
+.fa-brands{
+    color:#ee8071;
+    transition: 0.3s;
+}
+.fa-brands:hover{
+    color: #d25d5d;
+}
+
+@media only screen and (max-width: 1750px){
+    :root{
+        --leftRightMargin: 200px;
+    }
+}
+
+@media only screen and (max-width: 1310px){
+    :root{
+        --leftRightMargin: 50px;
+    }
+}
+@media only screen and (max-width: 930px){
+    i:nth-child(n){
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 725px){
+    i:nth-child(1){
+        margin-left: 0px;
+    }
+    i:nth-child(n+2){
+        margin-left: 15px;
+    }
+    .footer-info-grid{
+        margin: 30px var(--leftRightMargin) 150px;
+        display: flex;
+        
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: #a2a2a2;
+    }
+    .footer-social-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        margin-bottom: 1.5em;
+        margin-top: 50px;
+    }
+    .footer-navbar-nav{
+        flex-direction: column;
+    }
+    .f-nav-item:nth-child(2){
+        margin-left: 0;
+        
+    }
+    .f-nav-item{
+        margin-top: 16px;
+        
+    }
+    .f-nav-link{
+        margin-top: 10px;
+        margin-left: 0;
+        
+    }
+}

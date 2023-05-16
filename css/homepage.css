@@ -1,17 +1,7 @@
-body{
-    margin: 0 400px;
-    font-family: 'Jost', sans-serif;
-    display: flex;
-    flex-direction: column;
+:root {
+    --leftRightMargin: 400px;
 }
-.brand{
-    letter-spacing: 5px;
-}
-.hero-text{
-    font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 2.7rem;
-}
+
 .homepage-btn{
     border: 2px solid #ffffff;
     border-radius: 8px;
@@ -27,32 +17,6 @@ body{
     background-color: #d25d5d;
     color: white;
 }
-/* Navbar */
-.navbar-nav{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-}
-
-.nav-item:nth-child(2){
-    margin-left: auto;
-}
-.nav-link{
-    margin-left: 30px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-.nav-link:hover{
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,128,113,1) 50%, rgba(255,255,255,1) 100%);
-    
-    background-color: gradient();
-    
-}
 
 
 /* hero-block */
@@ -64,7 +28,7 @@ body{
     display: grid;
     grid-template-columns: 50% 40%;
     grid-column-gap: 5%;
-    margin-top: 30px;
+    margin: 30px var(--leftRightMargin) 0;
 }
 div.grid-item-1 * {
     margin-top: 40px;
@@ -72,7 +36,7 @@ div.grid-item-1 * {
 
 /* three component */
 .three-component-grid{
-    margin-top: 130px;
+    margin: 130px var(--leftRightMargin) 0;
     display: grid;
     grid-template:
         "main top"
@@ -81,32 +45,67 @@ div.grid-item-1 * {
         "main bottom";
     grid-gap: 30px;
 }
-.comp-1{grid-area: main;}.comp-2{grid-area: top;}.comp-3{grid-area: bottom;}
-
-
-.component{
-    background-color: #333333;
+.comp-1{
+    grid-area: main; 
+    position: relative;
+    text-align: center;
     color: white;
-    border-radius: 10px;
-    padding: 60px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
+.comp-2{
+    grid-area: top; 
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+.comp-3{
+    grid-area: bottom;  
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+.component{
+    transition: 0.4s;
+    cursor: pointer;
+}
+.component img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(0.3);
+    vertical-align: middle;
+}
+.component:hover{
+    color:#d25d5d;
+    transform: scale(1.01);
+    
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
 
 /* three flex comp */
 .three-flex-comp{
     display: flex;
     flex-direction: row;
-    margin-top: 180px;
+    margin: 180px var(--leftRightMargin) 0;
     column-gap: 50px;
     margin-bottom: 130px;
     justify-content: space-evenly;
 }
-.card{
+.hp-card{
     text-align: center;
     width: 330px;
+    margin-bottom: 100px;
 }
 .card-title-text{
     letter-spacing: 4px;
@@ -117,9 +116,58 @@ div.grid-item-1 * {
     background-color: #ee8071;
     border-radius: 50%;
     display: inline-block;
-    margin-bottom: 40px;
+    margin: 0 auto;
     transition: 0.4s;
 }
 .dot:hover{
     background-color: #d25d5d;
+}
+
+@media only screen and (max-width: 1750px){
+    :root{
+        --leftRightMargin: 200px;
+    }
+}
+
+@media only screen and (max-width: 1310px){
+    :root{
+        --leftRightMargin: 50px;
+    }
+}
+@media only screen and (max-width: 930px){
+    .hero-block-grid{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .three-component-grid{
+        margin: 100px var(--leftRightMargin) 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .component img{
+        height: 250px;
+    }
+
+    .three-flex-comp{
+        flex-direction: column;
+    }
+    .dot{
+        height: 200px;
+        width: 200px;
+    }
+    .hp-card{
+        display: grid;
+        grid-template-columns: 30% 65%;
+        grid-column-gap: 70px;
+        text-align: left;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .dot-text{
+        width: 80%;
+    }
+    
 }
