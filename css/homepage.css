@@ -1,6 +1,4 @@
-:root {
-    --leftRightMargin: 400px;
-}
+
 
 .homepage-btn{
     border: 2px solid #ffffff;
@@ -80,7 +78,6 @@ div.grid-item-1 * {
     vertical-align: middle;
 }
 .component:hover{
-    color:#d25d5d;
     transform: scale(1.01);
     
 }
@@ -171,3 +168,34 @@ div.grid-item-1 * {
     }
     
 }
+@media only screen and (max-width: 630px){
+    .hero-block-grid{
+        border-radius: 0;
+        margin: 30px 0 0;
+    }
+    .hp-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .dot-text{
+        text-align: center;
+        width: 90%;
+        margin-top: 40px;
+    }
+    .card-title-text{
+        margin-bottom: 30px;
+    }
+    .component img{
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 510px){
+    .hero-block-grid{      
+        padding: 30px;
+    }
+    .card-title-text{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+

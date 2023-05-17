@@ -1,6 +1,4 @@
-:root {
-    --leftRightMargin: 400px;
-}
+
 
 
 nav{
@@ -41,5 +39,21 @@ nav{
 @media only screen and (max-width: 1310px){
     :root{
         --leftRightMargin: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    
+    .nav-item:nth-child(n){
+        margin-left: auto;
+    }
+    .navbar-nav{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 630px){
+    
+    nav{
+        margin: 30px 0 0;
     }
 }
