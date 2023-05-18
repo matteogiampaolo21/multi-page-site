@@ -1,20 +1,5 @@
 
 
-.homepage-btn{
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    background-color: #ffffff;
-    padding: 15px;
-    font-family: 'Jost', sans-serif;
-    font-weight:500;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    transition: 0.4s;
-}
-.homepage-btn:hover{
-    background-color: #d25d5d;
-    color: white;
-}
 
 
 /* hero-block */
@@ -107,18 +92,7 @@ div.grid-item-1 * {
 .card-title-text{
     letter-spacing: 4px;
 }
-.dot{
-    height: 250px;
-    width: 250px;
-    background-color: #ee8071;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 auto;
-    transition: 0.4s;
-}
-.dot:hover{
-    background-color: #d25d5d;
-}
+
 
 @media only screen and (max-width: 1750px){
     :root{

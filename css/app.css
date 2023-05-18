@@ -25,6 +25,60 @@ a:hover{
     line-height: 2.7rem;
 }
 
+.homepage-btn{
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 15px;
+    font-family: 'Jost', sans-serif;
+    font-weight:500;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+}
+.homepage-btn:hover{
+    background-color: #d25d5d;
+    color: white;
+}
+
+.homepage-btn-2{
+    margin-top: 10px;
+    border: 2px solid #ee8071;
+    border-radius: 8px;
+    background-color: #ee8071;
+    padding: 15px;
+    font-family: 'Jost', sans-serif;
+    font-weight:500;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+}
+.homepage-btn-2:hover{
+    background-color: #ffffff;
+    color: #d25d5d;
+}
+
+
+.dot{
+    height: 250px;
+    width: 250px;
+    background-color: #ee8071;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+.dot-text{
+    margin-top: 30px;
+}
+.dot:hover{
+    background-color: #d25d5d;
+}
+
+.letterSpace{
+    letter-spacing: 3px;
+}
+
 @media only screen and (max-width: 1310px){
     :root{
         --leftRightMargin: 50px;
