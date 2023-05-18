@@ -96,3 +96,46 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
+
+
+@media  only screen and (max-width: 1040px){
+    .six-card-grid{
+        
+        grid-template-columns: 48% 48% ;
+        row-gap: 0px;
+        grid-template-rows: 400px 400px 400px;
+        
+    }
+    
+}
+@media  only screen and (max-width: 690px){
+    .six-card-grid{
+        margin: 0 var(--leftRightMargin) 50px ;
+        grid-template-columns: 100% ;
+        grid-template-rows: repeat(6,500px);
+        
+    }
+    .two-block{
+
+        grid-template-columns: 100%;
+        row-gap: 30px;
+        grid-template-rows: 30% 30%;
+        margin: 0 var(--leftRightMargin) 0 ;
+
+    }
+    .two-block .hero-text{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .orange-block{
+        background-color: #ee8071;
+        color: white;
+        margin: 40px 0 130px ;
+        border-radius: 0;
+        padding: 110px 80px 100px;
+    
+        text-align: center;
+    }
+   
+    
+}

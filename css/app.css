@@ -78,13 +78,29 @@ a:hover{
 .letterSpace{
     letter-spacing: 3px;
 }
+@media only screen and (max-width: 1750px){
+    :root{
+        --leftRightMargin: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1270px){
+    .dot{
+        width: 190px;
+        height: 190px;
+    }
+}
 
-@media only screen and (max-width: 1310px){
+@media only screen and (max-width: 1010px){
     :root{
         --leftRightMargin: 50px;
     }
 }
+
 @media only screen and (max-width: 510px){
+    :root{
+        --leftRightMargin: 20px;
+    }
     .hero-text{
         font-size: 2rem;
         line-height: 2.3rem;    

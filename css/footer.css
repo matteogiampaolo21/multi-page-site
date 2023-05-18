@@ -55,17 +55,7 @@ i:nth-child(n){
     color: #d25d5d;
 }
 
-@media only screen and (max-width: 1750px){
-    :root{
-        --leftRightMargin: 200px;
-    }
-}
 
-@media only screen and (max-width: 1310px){
-    :root{
-        --leftRightMargin: 50px;
-    }
-}
 @media only screen and (max-width: 930px){
     i:nth-child(n){
         margin-left: 15px;
