@@ -11,7 +11,7 @@
 .six-card-grid{
     display: grid;
     margin: 0 var(--leftRightMargin) 100px ;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 32% 32% 32%;
     grid-template-rows: 500px 500px;
     justify-content: space-between;
     text-align: center;
@@ -67,6 +67,7 @@
     grid-template-columns: 48% 48%;
     margin: 0 var(--leftRightMargin) 200px ;
     justify-content: space-between;
+
 }
 .block{
     position: relative;
@@ -74,6 +75,7 @@
     color: white;
     transition: 0.4s;
     cursor: pointer;
+    
 }
 .block img{
     width: 100%;
@@ -85,7 +87,8 @@
     vertical-align: middle;
 }
 .block:hover{
-    transform: scale(1.01);
+    transform: scale(1.02);
+   
     
 }
 
