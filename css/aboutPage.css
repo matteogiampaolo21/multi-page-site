@@ -14,7 +14,7 @@
 .second-block{
     grid-template-columns: 35% 65%;
     grid-template-rows: 700px;
-    background-color: #f1ddda;
+    background-color: #ffd4ce;
     color:black;
 }
 
@@ -37,7 +37,7 @@
 
     grid-template-columns: 60% 40%;
     grid-template-rows: 700px;
-    background-color: #f1ddda;
+    background-color: #ffd4ce;
     color:black;
 
 }
@@ -81,7 +81,7 @@
         margin: 0;
         padding: 130px var(--leftRightMargin) 130px;
         background-color: #ee8071;
-        color:#f1ddda;
+        color:#ffd4ce;
     }
     .three-flex-comp .dot{
         background-color:#d25d5d;
@@ -89,10 +89,10 @@
     .three-flex-comp .homepage-btn-2{
         background-color:#d25d5d;
         border-color: #d25d5d;
-        color: #f1ddda;
+        color: #ffd4ce;
     }
     .three-flex-comp .homepage-btn-2:hover{
-        background-color:#f1ddda;
+        background-color:#ffd4ce;
         color:#d25d5d;
         border-color: #d25d5d;
     }
