@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,13 +65,13 @@
             <h1>CANADA</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus asperiores quasi rem iste enim.</p>
         </div>
-        <div class="map"></div>
+        <div id="mapCanada" class="map"></div>
     </div>
     
     <div class="country-block second-block">
-        <div class="map"></div>
+        <div id="mapAustralia" class="map"></div>
         <div class="block-text">
-            <h1>AUSTRAILIA</h1>
+            <h1>AUSTRALIA</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus asperiores quasi rem iste enim.</p>
         </div>
         
@@ -75,10 +82,10 @@
             <h1>UNITED KINGDOM</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus asperiores quasi rem iste enim.</p>
         </div>
-        <div class="map"></div>
+        <div id="mapUK" class="map"></div>
     </div>
 
-
+    
 
     <footer>
         <div class="footer-flex">
@@ -119,6 +126,32 @@
         </div>
 
     </footer>
+
+    <script>
+        var map = L.map('mapCanada').setView([ 43.65,-79.38], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([43.655,-79.379]).addTo(map);
+        
+
+        var map = L.map('mapAustralia').setView([-33.87,151.21], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([-33.8801,151.205]).addTo(map);
+
+        
+        var map = L.map('mapUK').setView([51.507,-0.128], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([51.50,-0.12]).addTo(map);
+
+    </script>
 
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
